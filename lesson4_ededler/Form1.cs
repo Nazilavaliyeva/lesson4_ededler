@@ -93,5 +93,33 @@ namespace lesson4_ededler
             
 
         }
+
+        private void sade_Click(object sender, EventArgs e)
+        {
+             
+
+        }
+
+        private void ReqemCemi_Click(object sender, EventArgs e)
+        {
+            //Reqemlerin cemini tapir   
+            try
+            {
+                int eded = Convert.ToInt32(textBox1.Text);
+                int cem = 0;
+                while (eded > 0)
+                {
+                   cem = cem+(eded % 10);    // cem += eded % 10;
+                  eded =eded/ 10;
+                }
+                label1.Text = cem.ToString();   
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Xeta");
+            }
+        }
     }
 }

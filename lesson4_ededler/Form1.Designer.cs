@@ -94,6 +94,7 @@
             this.ReqemCemi.TabIndex = 4;
             this.ReqemCemi.Text = "Ədədlərin cəmi";
             this.ReqemCemi.UseVisualStyleBackColor = true;
+            this.ReqemCemi.Click += new System.EventHandler(this.ReqemCemi_Click);
             // 
             // ededtersi
             // 
@@ -119,6 +120,7 @@
             this.sade.TabIndex = 6;
             this.sade.Text = "Sadəlik";
             this.sade.UseVisualStyleBackColor = true;
+            this.sade.Click += new System.EventHandler(this.sade_Click);
             // 
             // faktorial
             // 
