@@ -96,7 +96,33 @@ namespace lesson4_ededler
 
         private void sade_Click(object sender, EventArgs e)
         {
-             
+            //sade ədəd olub olmadığını tapır
+            try
+            {
+                int eded = Convert.ToInt32(textBox1.Text);
+                string netice = "";
+                for (int i = 1; i <= eded; i++)
+                {
+                    if (i == 1 || i == eded)
+                    {
+                        netice = "Sadə ədəddir";
+                    }
+                    else if (eded % i == 0)
+                    {
+                        netice = "Mürəededkkəb ədəddir";
+                        break;
+                    }
+                }   
+               label1.Text = netice;
+
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Xeta");   
+            }
+
 
         }
 
