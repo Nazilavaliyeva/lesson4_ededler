@@ -39,5 +39,28 @@ namespace lesson4_ededler
         {
 
         }
+
+        private void faktorial_Click(object sender, EventArgs e)
+        {
+            //Faktorial hesablayir  
+            try
+            {
+                int eded = Convert.ToInt32(textBox1.Text);
+                int fakt = 1;
+                for (int i = 1; i <= eded; i++)
+                {
+                    fakt *= i;
+                }
+                label1.Text = fakt.ToString();
+
+            }
+            catch (Exception)
+            {
+
+               MessageBox.Show("Xeta","Ədəd daxil edin.");   
+            }
+            
+
+        }
     }
 }

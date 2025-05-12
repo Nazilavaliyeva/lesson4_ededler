@@ -131,6 +131,7 @@
             this.faktorial.TabIndex = 7;
             this.faktorial.Text = "Faktorial";
             this.faktorial.UseVisualStyleBackColor = true;
+            this.faktorial.Click += new System.EventHandler(this.faktorial_Click);
             // 
             // Form1
             // 
