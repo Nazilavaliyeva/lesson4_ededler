@@ -68,6 +68,7 @@
             this.kvadratkub.TabIndex = 2;
             this.kvadratkub.Text = "KvadratKub";
             this.kvadratkub.UseVisualStyleBackColor = true;
+            this.kvadratkub.Click += new System.EventHandler(this.kvadratkub_Click);
             // 
             // bolunen5
             // 
@@ -80,6 +81,7 @@
             this.bolunen5.TabIndex = 3;
             this.bolunen5.Text = "5-ə bölünən";
             this.bolunen5.UseVisualStyleBackColor = true;
+            this.bolunen5.Click += new System.EventHandler(this.bolunen5_Click);
             // 
             // ReqemCemi
             // 
@@ -134,7 +136,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(771, 385);
             this.Controls.Add(this.faktorial);
             this.Controls.Add(this.sade);
             this.Controls.Add(this.ededtersi);
