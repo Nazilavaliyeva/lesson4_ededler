@@ -47,7 +47,28 @@ namespace lesson4_ededler
 
         private void bolunen5_Click(object sender, EventArgs e)
         {
+            //5-ə bölünən ədədləri tapır    
+            try
+            {
+                int eded = Convert.ToInt32(textBox1.Text);
+                string netice = "";
+                if (eded % 5 == 0)
+                {
+                   netice = "5-ə bölünür";  
+                }
+                else
+                {
+                    netice = "5-ə bölünmür";    
 
+                }
+                label1.Text = netice;
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Xeta"); 
+
+            }
         }
 
         private void faktorial_Click(object sender, EventArgs e)
