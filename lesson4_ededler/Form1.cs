@@ -20,13 +20,23 @@ namespace lesson4_ededler
 
         private void button4_Click(object sender, EventArgs e)
         {
-            int eded = Convert.ToInt32(textBox1.Text);
-            string ters = "";
-            for (int i = eded.ToString().Length - 1; i >= 0; i--)
+            // Ədədləri ters çevirir    
+            try
             {
-                ters += eded.ToString()[i];
+                int eded = Convert.ToInt32(textBox1.Text);
+                string ters = "";
+                for (int i = eded.ToString().Length - 1; i >= 0; i--)
+                {
+                    ters += eded.ToString()[i];
+                }
+                label1.Text = ters;
+
             }
-            label1.Text = ters;
+            catch (Exception)
+            {
+
+                MessageBox.Show("Xeta", " Zəhmət olmasa ədəd daxil edin."); 
+            }
 
         }
 
