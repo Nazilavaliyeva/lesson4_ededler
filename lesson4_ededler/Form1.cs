@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Linq.Expressions;
@@ -42,7 +43,13 @@ namespace lesson4_ededler
 
         private void kvadratkub_Click(object sender, EventArgs e)
         {
+            //Kvadrat və kubunu tapır
            
+            
+           
+
+
+
         }
 
         private void bolunen5_Click(object sender, EventArgs e)
@@ -109,18 +116,16 @@ namespace lesson4_ededler
                     }
                     else if (eded % i == 0)
                     {
-                        netice = "Mürəededkkəb ədəddir";
+                        netice = "Mürəkkəb ədəddir";
                         break;
                     }
                 }   
                label1.Text = netice;
-
-
             }
-            catch (Exception)
+            catch
             {
 
-                MessageBox.Show("Xeta");   
+                MessageBox.Show("Xeta"," Zehmet olmasa eded daxil edin.",MessageBoxButtons.OK,MessageBoxIcon.Error);   
             }
 
 
@@ -141,7 +146,7 @@ namespace lesson4_ededler
                 label1.Text = cem.ToString();   
 
             }
-            catch (Exception)
+            catch 
             {
 
                 MessageBox.Show("Xeta");
