@@ -43,7 +43,7 @@
             this.textBox1.Location = new System.Drawing.Point(28, 27);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(509, 35);
+            this.textBox1.Size = new System.Drawing.Size(720, 35);
             this.textBox1.TabIndex = 0;
             // 
             // label1
@@ -51,7 +51,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(22, 102);
+            this.label1.Location = new System.Drawing.Point(227, 108);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(354, 32);
             this.label1.TabIndex = 1;
@@ -64,7 +64,7 @@
             this.kvadratkub.ForeColor = System.Drawing.Color.Blue;
             this.kvadratkub.Location = new System.Drawing.Point(12, 208);
             this.kvadratkub.Name = "kvadratkub";
-            this.kvadratkub.Size = new System.Drawing.Size(200, 44);
+            this.kvadratkub.Size = new System.Drawing.Size(159, 44);
             this.kvadratkub.TabIndex = 2;
             this.kvadratkub.Text = "KvadratKub";
             this.kvadratkub.UseVisualStyleBackColor = true;
@@ -77,7 +77,7 @@
             this.bolunen5.ForeColor = System.Drawing.Color.Blue;
             this.bolunen5.Location = new System.Drawing.Point(295, 208);
             this.bolunen5.Name = "bolunen5";
-            this.bolunen5.Size = new System.Drawing.Size(200, 44);
+            this.bolunen5.Size = new System.Drawing.Size(159, 44);
             this.bolunen5.TabIndex = 3;
             this.bolunen5.Text = "5-ə bölünən";
             this.bolunen5.UseVisualStyleBackColor = true;
@@ -90,7 +90,7 @@
             this.ReqemCemi.ForeColor = System.Drawing.Color.Blue;
             this.ReqemCemi.Location = new System.Drawing.Point(548, 208);
             this.ReqemCemi.Name = "ReqemCemi";
-            this.ReqemCemi.Size = new System.Drawing.Size(200, 44);
+            this.ReqemCemi.Size = new System.Drawing.Size(159, 44);
             this.ReqemCemi.TabIndex = 4;
             this.ReqemCemi.Text = "Ədədlərin cəmi";
             this.ReqemCemi.UseVisualStyleBackColor = true;
@@ -103,7 +103,7 @@
             this.ededtersi.ForeColor = System.Drawing.Color.Blue;
             this.ededtersi.Location = new System.Drawing.Point(12, 309);
             this.ededtersi.Name = "ededtersi";
-            this.ededtersi.Size = new System.Drawing.Size(200, 44);
+            this.ededtersi.Size = new System.Drawing.Size(159, 44);
             this.ededtersi.TabIndex = 5;
             this.ededtersi.Text = "Tərsi";
             this.ededtersi.UseVisualStyleBackColor = true;
@@ -116,7 +116,7 @@
             this.sade.ForeColor = System.Drawing.Color.Blue;
             this.sade.Location = new System.Drawing.Point(295, 309);
             this.sade.Name = "sade";
-            this.sade.Size = new System.Drawing.Size(200, 44);
+            this.sade.Size = new System.Drawing.Size(159, 44);
             this.sade.TabIndex = 6;
             this.sade.Text = "Sadəlik";
             this.sade.UseVisualStyleBackColor = true;
@@ -129,7 +129,7 @@
             this.faktorial.ForeColor = System.Drawing.Color.Blue;
             this.faktorial.Location = new System.Drawing.Point(548, 309);
             this.faktorial.Name = "faktorial";
-            this.faktorial.Size = new System.Drawing.Size(200, 44);
+            this.faktorial.Size = new System.Drawing.Size(159, 44);
             this.faktorial.TabIndex = 7;
             this.faktorial.Text = "Faktorial";
             this.faktorial.UseVisualStyleBackColor = true;
@@ -149,7 +149,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ədədlərin Analizi";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

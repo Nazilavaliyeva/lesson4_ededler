@@ -1,13 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics.Eventing.Reader;
-using System.Drawing;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace lesson4_ededler
@@ -18,6 +9,9 @@ namespace lesson4_ededler
         {
             InitializeComponent();
         }
+
+        int eli = 0;
+        int Eli = 1;
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -33,20 +27,21 @@ namespace lesson4_ededler
                 label1.Text = ters;
 
             }
-            catch (Exception)
+            catch (Exception ali)
             {
 
-                MessageBox.Show("Xeta", " Zəhmət olmasa ədəd daxil edin."); 
+                MessageBox.Show($"Xəta baş verdi: {ali.Message}", "Xəta", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
 
         }
 
         private void kvadratkub_Click(object sender, EventArgs e)
         {
             //Kvadrat və kubunu tapır
-           
-            
-           
+
+
+
 
 
 
@@ -61,11 +56,11 @@ namespace lesson4_ededler
                 string netice = "";
                 if (eded % 5 == 0)
                 {
-                   netice = "5-ə bölünür";  
+                    netice = "5-ə bölünür";
                 }
                 else
                 {
-                    netice = "5-ə bölünmür";    
+                    netice = "5-ə bölünmür";
 
                 }
                 label1.Text = netice;
@@ -73,7 +68,7 @@ namespace lesson4_ededler
             }
             catch (Exception)
             {
-                MessageBox.Show("Xeta"); 
+                MessageBox.Show("Xeta");
 
             }
         }
@@ -95,9 +90,9 @@ namespace lesson4_ededler
             catch (Exception)
             {
 
-               MessageBox.Show("Xeta","Ədəd daxil edin.");   
+                MessageBox.Show("Xeta", "Ədəd daxil edin.");
             }
-            
+
 
         }
 
@@ -119,13 +114,13 @@ namespace lesson4_ededler
                         netice = "Mürəkkəb ədəddir";
                         break;
                     }
-                }   
-               label1.Text = netice;
+                }
+                label1.Text = netice;
             }
             catch
             {
 
-                MessageBox.Show("Xeta"," Zehmet olmasa eded daxil edin.",MessageBoxButtons.OK,MessageBoxIcon.Error);   
+                MessageBox.Show("Xeta", " Zehmet olmasa eded daxil edin.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
@@ -140,17 +135,22 @@ namespace lesson4_ededler
                 int cem = 0;
                 while (eded > 0)
                 {
-                   cem = cem+(eded % 10);    // cem += eded % 10;
-                  eded =eded/ 10;
+                    cem = cem + (eded % 10);    // cem += eded % 10;
+                    eded = eded / 10;
                 }
-                label1.Text = cem.ToString();   
+                label1.Text = cem.ToString();
 
             }
-            catch 
+            catch
             {
 
                 MessageBox.Show("Xeta");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
